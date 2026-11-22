@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0d0b1d;
+    color: #ffffff;
+    min-height: 100vh;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background: #181530;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 34px;
+    letter-spacing: 1.5px;
+    color: #c084fc;
+}
+
+header p.sub-title {
+    font-size: 14px;
+    color: #a1a1aa;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+nav {
+    background: #1f1b3a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 14px;
+    border-bottom: 1px solid #332d59;
+}
+
+nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 22px;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    border-color: #a855f7;
+    background: #2a244d;
+}
+
+nav a.active {
+    background: #a855f7;
+    color: #fffcfc;
+    border-color: #a855f7;
+}
+
+/* Centered Profile Card (Task 1 Requirement) */
+.profile-section {
+    padding: 40px 20px;
+}
+
+.profile-card {
+    width: 380px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #181530;
+    border: 1px solid #3d356b;
+    border-radius: 18px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: border-color 0.2s ease;
+}
+
+.profile-card:hover {
+    border-color: #a855f7;
+}
+
+.profile-role {
+    font-size: 14px;
+    font-weight: 500;
+    color: #c084fc;
+    margin-top: 4px;
+}
+
+.profile-bio {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 14px 0 22px;
+}
+
+.card-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-links a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #2a244d;
+    border: 1px solid #a855f7;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+.card-links a:hover {
+    background: #a855f7;
+}
+
+/* Optional 3-Column Layout */
+.layout-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 25px;
+}
+
+aside.left-content, aside.right-content {
+    flex: 1;
+    min-width: 240px;
+    background: #181530;
+    border: 1px solid #332d59;
+    border-radius: 16px;
+    padding: 25px;
+}
+
+aside.left-content:hover, aside.right-content:hover {
+    border-color: #a855f7;
+}
+
+aside h3 {
+    color: #c084fc;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #332d59;
+    padding-bottom: 8px;
+    font-size: 18px;
+}
+
+aside p, aside ul {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+aside ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+aside ul li {
+    margin-bottom: 8px;
+}
+
+main.main-content {
+    flex: 2;
+    min-width: 280px;
+    background: #1c1838;
+    border: 1px solid #3d356b;
+    border-radius: 16px;
+    padding: 35px;
+    text-align: center;
+}
+
+main.main-content:hover {
+    border-color: #a855f7;
+}
+
+main h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+main p {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+/* Large Circular Avatar */
+.avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px 0;
+}
+
+.hero-avatar {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #a855f7;
+    transition: border-color 0.2s ease;
+}
+
+.hero-avatar:hover {
+    border-color: #ffffff;
+}
+
+footer {
+    background: #181530;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #332d59;
+    font-size: 13px;
+    color: #94a3b8;
+}

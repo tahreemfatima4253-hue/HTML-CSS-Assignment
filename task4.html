@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <h1>Event Registration</h1>
+    <p class="subtitle">GDG on Campus Event Sign-Up</p>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Participant Details</legend>
+
+        <div class="field-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="field-group">
+          <label for="password">Create Password</label>
+          <input type="password" id="password" name="password" placeholder="At least 8 characters" required>
+        </div>
+
+        <div class="field-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX" required>
+        </div>
+
+        <div class="field-group">
+          <label for="event-date">Preferred Session Date</label>
+          <input type="date" id="event-date" name="event-date" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Attendance & Tracks</legend>
+
+        <div class="field-group">
+          <span class="group-label">Attendance Mode</span>
+          <div class="option-row">
+            <label for="mode-onsite" class="inline-option">
+              <input type="radio" id="mode-onsite" name="attendance-mode" value="onsite" required>
+              On-Campus
+            </label>
+            <label for="mode-online" class="inline-option">
+              <input type="radio" id="mode-online" name="attendance-mode" value="online">
+              Online
+            </label>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <span class="group-label">Topics of Interest</span>
+          <div class="option-row">
+            <label for="topic-html-css" class="inline-option">
+              <input type="checkbox" id="topic-html-css" name="topics" value="html-css">
+              HTML & CSS
+            </label>
+            <label for="topic-web" class="inline-option">
+              <input type="checkbox" id="topic-web" name="topics" value="web-dev">
+              Web Design
+            </label>
+            <label for="topic-career" class="inline-option">
+              <input type="checkbox" id="topic-career" name="topics" value="career">
+              Tech Talks
+            </label>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="role">Current Role</label>
+          <select id="role" name="role" required>
+            <option value="">Select your role</option>
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="notes">Questions or Notes</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Any questions or special requirements..."></textarea>
+        </div>
+      </fieldset>
+
+      <div class="button-row">
+        <button type="submit" class="btn-submit">Submit</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
